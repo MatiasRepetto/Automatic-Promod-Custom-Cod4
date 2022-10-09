@@ -2,8 +2,6 @@
 #include <iostream>
 #include <stdio.h>
 
-
-
 int main(){
     varTxt_v aux;
     int mMint;
@@ -25,5 +23,9 @@ int main(){
             return main();
     }
     utils::writefile(aux);
+    system("cd .\\resources\\promod4-master\\promod_ruleset && del custom_public.gsc && ren *.txt *.gsc");
+    system(".\\resources\\promod4-master\\compile.bat");
+
+
     return 0;
 }
