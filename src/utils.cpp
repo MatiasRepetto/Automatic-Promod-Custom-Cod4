@@ -1,7 +1,8 @@
 #include "../include/utils.h"
 
 void utils::writefile(){
-    std::string arrayTxt[170] = {
+    const int arrayTam = 170;
+    std::string arrayTxt[arrayTam] = {
         "main()",
         "{",
         R"(setDvar( "scr_sd_bombtimer", 45 );)", 
@@ -173,4 +174,18 @@ void utils::writefile(){
         R"(setDvar( "promod_mc_messagedelay_3", 0 );)",
         "}"
     };
+    try {
+        std::ofstream fw("./resources/promod4-master/promod_ruleset/custom_public.txt", std::ofstream::out);
+        if (fw.is_open())
+        {
+        for (int i = 0; i < arrayTam; i++) {
+            fw << arrayTxt[i] << "\n";
+        }
+        fw.close();
+        }
+        else std::cout << "Problem with opening file";
+    }
+    catch (const char* msg) {
+        std::cerr << msg << std::endl;
+    }
 }

@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <string>
+#include <fstream>
 
 class utils{
     public:
