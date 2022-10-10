@@ -6,8 +6,8 @@ int main(){
     varTxt_v aux;
     int mMint;
     std::cout << "(1) Edit Class Limits" << std::endl;
-    std::cout << "" << std::endl;
-    std::cout << "" << std::endl;
+    std::cout << "(2) Edit Team Deathmatch Configuration" << std::endl;
+    std::cout << "(3) Edit Deathmatch Configuration" << std::endl;
     std::cout << "(141) Craft my Custom Promod" << std::endl;
     std::cout << "(0) Exit" << std::endl;
     std::cin >> mMint;
@@ -41,11 +41,31 @@ int main(){
                     std::cin >> aux.cSniper;
                     aux.cSniper = aux.cSniper % 65;
                     return main();
+                case 0:
+                    return main();
                 default:
                     return main();
             }
         case 2:
-            return main();
+            int case2Aux;
+            std::cout << "(1) Edit Score Limit" << std::endl;
+            std::cout << "(2) Edit Time Limit" << std::endl;
+            std::cout << "(0) Back" << std::endl;
+            std::cin >> case2Aux;
+            switch(case1Aux){
+                case 1:
+                    std::cout << "Enter Score Limit" << std::endl;
+                    std::cin >> aux.tdmScoreLimit;
+                    return main();
+                case 2:
+                    std::cout << "Enter Time Limit (Minutes)" << std::endl;
+                    std::cin >> aux.tdmTimeLimit;
+                    return main();
+                case 0:
+                    return main();
+                default:
+                    return main();
+            }
         case 3:
             return main();
         case 0:

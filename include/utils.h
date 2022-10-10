@@ -8,6 +8,7 @@
 
 struct varTxt_t{
     int cSniper = 1, cAssoult = 64, cSpecops = 2, cDemolitions = 1;
+    int tdmScoreLimit = 0, tdmTimeLimit = 10;
 };
 
 typedef varTxt_t varTxt_v;
