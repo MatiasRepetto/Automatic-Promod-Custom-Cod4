@@ -7,7 +7,7 @@
 #include <fstream>
 
 struct varTxt_t{
-
+    int cSniper, cAssoult, cSpecops, cDemolitions;
 };
 
 typedef varTxt_t varTxt_v;
