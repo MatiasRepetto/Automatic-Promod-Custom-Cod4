@@ -8,6 +8,7 @@ int main(){
     std::cout << "(1) Edit Class Limits" << std::endl;
     std::cout << "(2) Edit Team Deathmatch Configuration" << std::endl;
     std::cout << "(3) Edit Deathmatch Configuration" << std::endl;
+    std::cout << "(4) Edit Grenades Otions" << std::endl;
     std::cout << "(141) Craft my Custom Promod" << std::endl;
     std::cout << "(0) Exit" << std::endl;
     std::cin >> mMint;
@@ -85,6 +86,61 @@ int main(){
                 case 3:
                     std::cout << "Enter Spawn Delay (Seconds)" << std::endl;
                     std::cin >> aux.dmSpawnDelay;
+                    return main();
+                case 0:
+                    return main();
+                default:
+                    return main();
+            }
+        case 4:
+            int case4Aux;
+            std::cout << "(1) Edit Flash Grenade" << std::endl;
+            std::cout << "(2) Edit Frag Grenade" << std::endl;
+            std::cout << "(3) Edit Smoake Grenade" << std::endl;
+            std::cout << "(0) Back" << std::endl;
+            std::cin >> case4Aux;
+            switch(case4Aux){
+                case 1:
+                    int flashAux;
+                    std::cout << "(1) Allowed" << std::endl;
+                    std::cout << "(0) Not allowed" << std::endl;
+                    std::cin >> flashAux;
+                    switch(flashAux){
+                        case 1:
+                            aux.grFlash = 1;
+                        case 0:
+                            aux.grFlash = 0;
+                        default:
+                            return main();
+                    }
+                    return main();
+                case 2:
+                    int fragAux;
+                    std::cout << "(1) Allowed" << std::endl;
+                    std::cout << "(0) Not allowed" << std::endl;
+                    std::cin >> fragAux;
+                    switch(fragAux){
+                        case 1:
+                            aux.grFrag = 1;
+                        case 0:
+                            aux.grFrag = 0;
+                        default:
+                            return main();
+                    }
+                    return main();
+                case 3:
+                    int smokeAux;
+                    std::cout << "(1) Allowed" << std::endl;
+                    std::cout << "(0) Not allowed" << std::endl;
+                    std::cin >> smokeAux;
+                    switch(smokeAux){
+                        case 1:
+                            aux.grSmoke = 1;
+                        case 0:
+                            aux.grSmoke = 0;
+                        default:
+                            return main();
+                    }
                     return main();
                 case 0:
                     return main();
