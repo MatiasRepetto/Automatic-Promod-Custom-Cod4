@@ -52,7 +52,7 @@ int main(){
             std::cout << "(2) Edit Time Limit" << std::endl;
             std::cout << "(0) Back" << std::endl;
             std::cin >> case2Aux;
-            switch(case1Aux){
+            switch(case2Aux){
                 case 1:
                     std::cout << "Enter Score Limit" << std::endl;
                     std::cin >> aux.tdmScoreLimit;
@@ -67,7 +67,30 @@ int main(){
                     return main();
             }
         case 3:
-            return main();
+            int case3Aux;
+            std::cout << "(1) Edit Score Limit" << std::endl;
+            std::cout << "(2) Edit Time Limit" << std::endl;
+            std::cout << "(3) Edit Spawn Delay" << std::endl;
+            std::cout << "(0) Back" << std::endl;
+            std::cin >> case3Aux;
+            switch(case3Aux){
+                case 1:
+                    std::cout << "Enter Score Limit" << std::endl;
+                    std::cin >> aux.dmScoreLimit;
+                    return main();
+                case 2:
+                    std::cout << "Enter Time Limit (Minutes)" << std::endl;
+                    std::cin >> aux.dmTimeLimit;
+                    return main();
+                case 3:
+                    std::cout << "Enter Spawn Delay (Seconds)" << std::endl;
+                    std::cin >> aux.dmSpawnDelay;
+                    return main();
+                case 0:
+                    return main();
+                default:
+                    return main();
+            }
         case 0:
             return 0;
         case 141:
