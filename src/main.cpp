@@ -2,9 +2,10 @@
 #include <iostream>
 #include <stdio.h>
 
+varTxt_t* aux = new varTxt_t;
+
 int main(){
     system("cls");
-    varTxt_v aux;
     int mMint;
     std::cout << "(1) Edit Class Limits" << std::endl;
     std::cout << "(2) Edit Team Deathmatch Configuration" << std::endl;
@@ -27,26 +28,26 @@ int main(){
                 case 1:
                     system("cls");
                     std::cout << "Enter Limit of Assoult classes (1-64)" << std::endl;
-                    std::cin >> aux.cAssoult;
-                    aux.cAssoult = aux.cAssoult % 65;
+                    std::cin >> aux->cAssoult;
+                    aux->cAssoult = aux->cAssoult % 65;
                     return main();
                 case 2:
                     system("cls");
                     std::cout << "Enter Limit of Specops classes (1-64)" << std::endl;
-                    std::cin >> aux.cSpecops;
-                    aux.cSpecops = aux.cSpecops % 65;
+                    std::cin >> aux->cSpecops;
+                    aux->cSpecops = aux->cSpecops % 65;
                     return main();
                 case 3:
                     system("cls");
                     std::cout << "Enter Limit of Demolition classes (1-64)" << std::endl;
-                    std::cin >> aux.cDemolitions;
-                    aux.cDemolitions = aux.cDemolitions % 65;
+                    std::cin >> aux->cDemolitions;
+                    aux->cDemolitions = aux->cDemolitions % 65;
                     return main();
                 case 4:
                     system("cls");
                     std::cout << "Enter Limit of Sniper classes (1-64)" << std::endl;
-                    std::cin >> aux.cSniper;
-                    aux.cSniper = aux.cSniper % 65;
+                    std::cin >> aux->cSniper;
+                    aux->cSniper = aux->cSniper % 65;
                     return main();
                 case 0:
                     return main();
@@ -64,12 +65,12 @@ int main(){
                 case 1:
                     system("cls");
                     std::cout << "Enter Score Limit" << std::endl;
-                    std::cin >> aux.tdmScoreLimit;
+                    std::cin >> aux->tdmScoreLimit;
                     return main();
                 case 2:
                     system("cls");
                     std::cout << "Enter Time Limit (Minutes)" << std::endl;
-                    std::cin >> aux.tdmTimeLimit;
+                    std::cin >> aux->tdmTimeLimit;
                     return main();
                 case 0:
                     return main();
@@ -88,17 +89,17 @@ int main(){
                 case 1:
                     system("cls");
                     std::cout << "Enter Score Limit" << std::endl;
-                    std::cin >> aux.dmScoreLimit;
+                    std::cin >> aux->dmScoreLimit;
                     return main();
                 case 2:
                     system("cls");
                     std::cout << "Enter Time Limit (Minutes)" << std::endl;
-                    std::cin >> aux.dmTimeLimit;
+                    std::cin >> aux->dmTimeLimit;
                     return main();
                 case 3:
                     system("cls");
                     std::cout << "Enter Spawn Delay (Seconds)" << std::endl;
-                    std::cin >> aux.dmSpawnDelay;
+                    std::cin >> aux->dmSpawnDelay;
                     return main();
                 case 0:
                     return main();
@@ -122,9 +123,9 @@ int main(){
                     std::cin >> flashAux;
                     switch(flashAux){
                         case 1:
-                            aux.grFlash = 1;
+                            aux->grFlash = 1;
                         case 0:
-                            aux.grFlash = 0;
+                            aux->grFlash = 0;
                         default:
                             return main();
                     }
@@ -137,9 +138,9 @@ int main(){
                     std::cin >> fragAux;
                     switch(fragAux){
                         case 1:
-                            aux.grFrag = 1;
+                            aux->grFrag = 1;
                         case 0:
-                            aux.grFrag = 0;
+                            aux->grFrag = 0;
                         default:
                             return main();
                     }
@@ -152,9 +153,9 @@ int main(){
                     std::cin >> smokeAux;
                     switch(smokeAux){
                         case 1:
-                            aux.grSmoke = 1;
+                            aux->grSmoke = 1;
                         case 0:
-                            aux.grSmoke = 0;
+                            aux->grSmoke = 0;
                         default:
                             return main();
                     }

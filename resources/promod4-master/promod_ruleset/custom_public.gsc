@@ -48,7 +48,7 @@ main()
      setDvar( "scr_war_roundlimit", 2 );
      setDvar( "scr_war_scorelimit", 0 );
      setDvar( "scr_war_roundswitch", 1 );
-     setDvar( "scr_war_timelimit", 15 );
+     setDvar( "scr_war_timelimit", 10 );
      setDvar( "scr_war_waverespawndelay", 0 );
      setDvar( "scr_dm_numlives", 0 );
      setDvar( "scr_dm_playerrespawndelay", 0 );
@@ -59,7 +59,7 @@ main()
      setDvar( "class_assault_limit", 64 );
      setDvar( "class_specops_limit", 2 );
      setDvar( "class_demolitions_limit", 1 );
-     setDvar( "class_sniper_limit", 1 );
+     setDvar( "class_sniper_limit", 32 );
      setDvar( "class_assault_allowdrop", 1 );
      setDvar( "class_specops_allowdrop", 1 );
      setDvar( "class_demolitions_allowdrop", 0 );
