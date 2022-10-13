@@ -11,6 +11,7 @@ int main(){
     std::cout << "(2) Edit Team Deathmatch Configuration" << std::endl;
     std::cout << "(3) Edit Deathmatch Configuration" << std::endl;
     std::cout << "(4) Edit Grenades Otions" << std::endl;
+    std::cout << "(5) Edit Other random configs" << std::endl;
     std::cout << "(141) Craft my Custom Promod" << std::endl;
     std::cout << "(0) Exit" << std::endl;
     std::cin >> mMint;
@@ -159,6 +160,29 @@ int main(){
                         default:
                             return main();
                     }
+                    return main();
+                case 0:
+                    return main();
+                default:
+                    return main();
+            }
+        case 5:
+            system("cls");
+            int case5Aux;
+            std::cout << "(1) Edit height to inflict min fall damage" << std::endl;
+            std::cout << "(2) Edit height to inflict max fall damage" << std::endl;
+            std::cout << "(0) Back" << std::endl;
+            std::cin >> case5Aux;
+            switch(case5Aux){
+                case 1:
+                    system("cls");
+                    std::cout << "Enter min height" << std::endl;
+                    std::cin >> aux->fdMin;
+                    return main();
+                case 2:
+                    system("cls");
+                    std::cout << "Enter max height" << std::endl;
+                    std::cin >> aux->fdMax;
                     return main();
                 case 0:
                     return main();

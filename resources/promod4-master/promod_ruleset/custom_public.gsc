@@ -59,7 +59,7 @@ main()
      setDvar( "class_assault_limit", 64 );
      setDvar( "class_specops_limit", 2 );
      setDvar( "class_demolitions_limit", 1 );
-     setDvar( "class_sniper_limit", 32 );
+     setDvar( "class_sniper_limit", 5 );
      setDvar( "class_assault_allowdrop", 1 );
      setDvar( "class_specops_allowdrop", 1 );
      setDvar( "class_demolitions_allowdrop", 0 );
@@ -89,9 +89,9 @@ main()
      setDvar( "weap_allow_deserteaglegold", 1 );
      setDvar( "attach_allow_pistol_none", 1 );
      setDvar( "attach_allow_pistol_silencer", 1 );
-     setDvar( "weap_allow_flash_grenade", 1 );
-     setDvar( "weap_allow_frag_grenade", 1 );
-     setDvar( "weap_allow_smoke_grenade", 1 );
+     setDvar( "weap_allow_flash_grenade", 0 );
+     setDvar( "weap_allow_frag_grenade", 0 );
+     setDvar( "weap_allow_smoke_grenade", 0 );
      setDvar( "class_assault_primary", "ak47" );
      setDvar( "class_assault_primary_attachment", "none" );
      setDvar( "class_assault_secondary", "deserteagle" );
@@ -122,8 +122,8 @@ main()
      setDvar( "scr_game_deathpointloss", 0 );
      setDvar( "scr_game_suicidepointloss", 0 );
      setDvar( "scr_player_suicidespawndelay", 0 );
-     setDvar( "bg_fallDamageMinHeight", 140 );
-     setDvar( "bg_fallDamageMaxHeight", 350 );
+     setDvar( "bg_fallDamageMinHeight", 0 );
+     setDvar( "bg_fallDamageMaxHeight", 0 );
      setDvar( "logfile", 1 );
      setDvar( "g_log", "games_mp.log" );
      setDvar( "g_logSync", 0 );

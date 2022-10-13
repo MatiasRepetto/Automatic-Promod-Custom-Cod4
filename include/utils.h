@@ -12,6 +12,7 @@ class varTxt_t{
         int tdmScoreLimit = 0, tdmTimeLimit = 10;
         int dmScoreLimit = 0, dmTimeLimit = 10, dmSpawnDelay = 0;
         int grFlash = 1, grFrag = 1, grSmoke = 1;
+        int fdMax = 350, fdMin = 140;
 };
 
 class utils{
