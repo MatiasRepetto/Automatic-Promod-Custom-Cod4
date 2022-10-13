@@ -200,5 +200,6 @@ int main(){
         default:
             return main();
     }
+    delete aux;
     return 0;
 }
