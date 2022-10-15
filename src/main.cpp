@@ -196,6 +196,7 @@ int main(){
             system("cd .\\resources\\promod4-master\\promod_ruleset && del custom_public.gsc && ren *.txt *.gsc");
             system(".\\resources\\promod4-master\\compile.bat");
             system("cls");
+            system("exit");
             break;
         default:
             return main();
