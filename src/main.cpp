@@ -171,6 +171,8 @@ int main(){
             int case5Aux;
             std::cout << "(1) Edit height to inflict min fall damage" << std::endl;
             std::cout << "(2) Edit height to inflict max fall damage" << std::endl;
+            std::cout << "(3) Allow/Disable KillCam" << std::endl;
+            std::cout << "(4) Edit Hub Web page" << std::endl;
             std::cout << "(0) Back" << std::endl;
             std::cin >> case5Aux;
             switch(case5Aux){
@@ -183,6 +185,26 @@ int main(){
                     system("cls");
                     std::cout << "Enter max height" << std::endl;
                     std::cin >> aux->fdMax;
+                    return main();
+                case 3:
+                    system("cls");
+                    int killCamAux;
+                    std::cout << "(1) Allowed" << std::endl;
+                    std::cout << "(0) Not allowed" << std::endl;
+                    std::cin >> killCamAux;
+                    switch(killCamAux){
+                        case 1:
+                            aux->killCam = 1;
+                        case 0:
+                            aux->killCam = 0;
+                        default:
+                            return main();
+                    }
+                    return main();
+                case 4:
+                    system("cls");
+                    std::cout << "Enter your page domain (ex : www.promod.com)" << std::endl;
+                    std::cin >> aux->domain;
                     return main();
                 case 0:
                     return main();

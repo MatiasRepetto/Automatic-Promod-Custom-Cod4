@@ -13,6 +13,8 @@ class varTxt_t{
         int dmScoreLimit = 0, dmTimeLimit = 10, dmSpawnDelay = 0;
         int grFlash = 1, grFrag = 1, grSmoke = 1;
         int fdMax = 350, fdMin = 140;
+        int killCam = 0;
+        std::string domain = "www.promod.com";
 };
 
 class utils{
