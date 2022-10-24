@@ -20,6 +20,7 @@ class varTxt_t{
 class utils{
     public:
         static void writefile(varTxt_t*);
+        static void banner();
 };
 
 #endif

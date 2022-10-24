@@ -1,5 +1,18 @@
 #include "../include/utils.h"
 
+void utils::banner(){
+std::cout <<"________________________________________________________________________________"   << std::endl;
+std::cout << "   ______           __                  ____             __  ___          __" << std::endl;
+std::cout <<"  / ____/_  _______/ /_____  ____ ___  / __ \\_________  /  |/  /___  ____/ /"<< std::endl;
+std::cout <<" / /   / / / / ___/ __/ __ \\/ __ `__ \\/ /_/ / ___/ __ \\/ /|_/ / __ \\/ __  /" << std::endl;
+std::cout <<"/ /___/ /_/ (__  ) /_/ /_/ / / / / / / ____/ /  / /_/ / /  / / /_/ / /_/ /"  << std::endl;
+std::cout <<"\\____/\\__,_/____/\\__/\\____/_/ /_/ /_/_/   /_/   \\____/_/  /_/\\____/\\__,_/"   << std::endl;
+std::cout <<"________________________________________________________________________________"   << std::endl;
+std::cout <<""   << std::endl;
+std::cout <<""   << std::endl;
+std::cout <<""   << std::endl;
+}
+
 void utils::writefile(varTxt_t* varTxto){
     const int arrayTam = 170;
     std::string arrayTxt[arrayTam] = {
