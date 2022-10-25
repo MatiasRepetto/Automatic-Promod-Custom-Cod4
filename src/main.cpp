@@ -234,7 +234,7 @@ int main(){
                     return main();
             }
         case 0:
-            return 0;
+            break;
         case 141:
             utils::writefile(aux);
             system("cd .\\resources\\promod4-master\\promod_ruleset && del custom_public.gsc && ren *.txt *.gsc");
