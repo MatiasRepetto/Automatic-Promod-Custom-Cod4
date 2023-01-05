@@ -46,17 +46,17 @@ main()
      setDvar( "scr_war_numlives", 0 );
      setDvar( "scr_war_playerrespawndelay", 0 );
      setDvar( "scr_war_roundlimit", 2 );
-     setDvar( "scr_war_scorelimit", 1500 );
+     setDvar( "scr_war_scorelimit", 0 );
      setDvar( "scr_war_roundswitch", 1 );
      setDvar( "scr_war_timelimit", 10 );
      setDvar( "scr_war_waverespawndelay", 0 );
      setDvar( "scr_dm_numlives", 0 );
-     setDvar( "scr_dm_playerrespawndelay", 5 );
+     setDvar( "scr_dm_playerrespawndelay", 0 );
      setDvar( "scr_dm_roundlimit", 1 );
      setDvar( "scr_dm_scorelimit", 0 );
      setDvar( "scr_dm_timelimit", 10 );
      setDvar( "scr_dm_waverespawndelay", 0 );
-     setDvar( "class_assault_limit", 5 );
+     setDvar( "class_assault_limit", 64 );
      setDvar( "class_specops_limit", 2 );
      setDvar( "class_demolitions_limit", 1 );
      setDvar( "class_sniper_limit", 1 );
@@ -89,9 +89,9 @@ main()
      setDvar( "weap_allow_deserteaglegold", 1 );
      setDvar( "attach_allow_pistol_none", 1 );
      setDvar( "attach_allow_pistol_silencer", 1 );
-     setDvar( "weap_allow_flash_grenade", 0 );
+     setDvar( "weap_allow_flash_grenade", 1 );
      setDvar( "weap_allow_frag_grenade", 1 );
-     setDvar( "weap_allow_smoke_grenade", 0 );
+     setDvar( "weap_allow_smoke_grenade", 1 );
      setDvar( "class_assault_primary", "ak47" );
      setDvar( "class_assault_primary_attachment", "none" );
      setDvar( "class_assault_secondary", "deserteagle" );
@@ -167,4 +167,5 @@ main()
      setDvar( "promod_mc_messagedelay_1", 0 );
      setDvar( "promod_mc_messagedelay_2", 0 );
      setDvar( "promod_mc_messagedelay_3", 0 );
+     setDvar( "player_sprintUnlimited", 0 );
 }

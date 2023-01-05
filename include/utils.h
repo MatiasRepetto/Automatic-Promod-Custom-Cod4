@@ -14,6 +14,7 @@ class varTxt_t{
         int grFlash = 1, grFrag = 1, grSmoke = 1;
         int fdMax = 350, fdMin = 140;
         int killCam = 0;
+        int noTiredValue = 0;
         std::string domain = "www.promod.com";
 };
 

@@ -14,7 +14,7 @@ std::cout <<""   << std::endl;
 }
 
 void utils::writefile(varTxt_t* varTxto){
-    const int arrayTam = 170;
+    const int arrayTam = 171;
     std::string arrayTxt[arrayTam] = {
         "main()",
         "{",
@@ -185,6 +185,7 @@ void utils::writefile(varTxt_t* varTxto){
         R"(     setDvar( "promod_mc_messagedelay_1", 0 );)", 
         R"(     setDvar( "promod_mc_messagedelay_2", 0 );)",
         R"(     setDvar( "promod_mc_messagedelay_3", 0 );)",
+        "     setDvar( \"player_sprintUnlimited\", " + std::to_string(varTxto->noTiredValue) + " );",
         "}"
     };
     try {

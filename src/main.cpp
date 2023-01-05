@@ -13,6 +13,7 @@ int main(){
     std::cout << "(3) Edit Deathmatch Configuration" << std::endl;
     std::cout << "(4) Edit Grenades Otions" << std::endl;
     std::cout << "(5) Edit Other random configs" << std::endl;
+    std::cout << "(6) Add CodJumper Features" << std::endl;
     std::cout << "(141) Craft my Custom Promod" << std::endl;
     std::cout << "(0) Exit" << std::endl;
     std::cin >> mMint;
@@ -137,13 +138,8 @@ int main(){
                     std::cout << "(1) Allowed" << std::endl;
                     std::cout << "(0) Not allowed" << std::endl;
                     std::cin >> flashAux;
-                    switch(flashAux){
-                        case 1:
-                            aux->grFlash = 1;
-                        case 0:
-                            aux->grFlash = 0;
-                        default:
-                            return main();
+                    if(flashAux == 0 || flashAux == 1){
+                        aux->grFlash = flashAux;
                     }
                     return main();
                 case 2:
@@ -153,13 +149,8 @@ int main(){
                     std::cout << "(1) Allowed" << std::endl;
                     std::cout << "(0) Not allowed" << std::endl;
                     std::cin >> fragAux;
-                    switch(fragAux){
-                        case 1:
-                            aux->grFrag = 1;
-                        case 0:
-                            aux->grFrag = 0;
-                        default:
-                            return main();
+                    if(fragAux == 0 || fragAux == 1){
+                        aux->grFrag = fragAux;
                     }
                     return main();
                 case 3:
@@ -169,13 +160,8 @@ int main(){
                     std::cout << "(1) Allowed" << std::endl;
                     std::cout << "(0) Not allowed" << std::endl;
                     std::cin >> smokeAux;
-                    switch(smokeAux){
-                        case 1:
-                            aux->grSmoke = 1;
-                        case 0:
-                            aux->grSmoke = 0;
-                        default:
-                            return main();
+                    if(smokeAux == 0 || smokeAux == 1){
+                        aux->grSmoke = smokeAux;
                     }
                     return main();
                 case 0:
@@ -213,13 +199,8 @@ int main(){
                     std::cout << "(1) Allowed" << std::endl;
                     std::cout << "(0) Not allowed" << std::endl;
                     std::cin >> killCamAux;
-                    switch(killCamAux){
-                        case 1:
-                            aux->killCam = 1;
-                        case 0:
-                            aux->killCam = 0;
-                        default:
-                            return main();
+                    if(killCamAux == 0 || killCamAux == 1){
+                        aux->killCam = killCamAux;
                     }
                     return main();
                 case 4:
@@ -227,6 +208,30 @@ int main(){
                     utils::banner();
                     std::cout << "Enter your page domain (ex : www.promod.com)" << std::endl;
                     std::cin >> aux->domain;
+                    return main();
+                case 0:
+                    return main();
+                default:
+                    return main();
+            }
+        case 6:
+            system("cls");
+            utils::banner();
+            int case6Aux;
+            std::cout << "(1) Instant recovery from fatigue" << std::endl;
+            std::cout << "(0) Back" << std::endl;
+            std::cin >> case6Aux;
+            switch(case6Aux){
+                case 1:
+                    system("cls");
+                    utils::banner();
+                    int noTired;
+                    std::cout << "(1) Allowed" << std::endl;
+                    std::cout << "(0) Not allowed" << std::endl;
+                    std::cin >> noTired;
+                    if(noTired == 0 || noTired == 1){
+                        aux->noTiredValue = noTired;
+                    }
                     return main();
                 case 0:
                     return main();
@@ -241,7 +246,9 @@ int main(){
             system(".\\resources\\promod4-master\\compile.bat");
             system("cls");
             system("exit");
-            break;
+            delete aux;
+            aux = NULL;
+            return 0;
         default:
             return main();
     }
