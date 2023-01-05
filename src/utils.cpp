@@ -189,7 +189,7 @@ void utils::writefile(varTxt_t* varTxto){
         "}"
     };
     try {
-        std::ofstream fw("C:\\Users\\dd\\Desktop\\Automatic-Promod-Custom-Cod4\\resources\\promod4-master\\promod_ruleset\\custom_public.txt", std::ofstream::out);
+        std::ofstream fw(".\\resources\\promod4-master\\promod_ruleset\\custom_public.txt", std::ofstream::out);
         if (fw.is_open())
         {
         for (int i = 0; i < arrayTam; i++) {

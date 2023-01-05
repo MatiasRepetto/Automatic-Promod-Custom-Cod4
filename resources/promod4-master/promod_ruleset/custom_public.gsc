@@ -89,9 +89,9 @@ main()
      setDvar( "weap_allow_deserteaglegold", 1 );
      setDvar( "attach_allow_pistol_none", 1 );
      setDvar( "attach_allow_pistol_silencer", 1 );
-     setDvar( "weap_allow_flash_grenade", 1 );
-     setDvar( "weap_allow_frag_grenade", 1 );
-     setDvar( "weap_allow_smoke_grenade", 1 );
+     setDvar( "weap_allow_flash_grenade", 0 );
+     setDvar( "weap_allow_frag_grenade", 0 );
+     setDvar( "weap_allow_smoke_grenade", 0 );
      setDvar( "class_assault_primary", "ak47" );
      setDvar( "class_assault_primary_attachment", "none" );
      setDvar( "class_assault_secondary", "deserteagle" );
@@ -167,5 +167,5 @@ main()
      setDvar( "promod_mc_messagedelay_1", 0 );
      setDvar( "promod_mc_messagedelay_2", 0 );
      setDvar( "promod_mc_messagedelay_3", 0 );
-     setDvar( "player_sprintUnlimited", 0 );
+     setDvar( "player_sprintUnlimited", 1 );
 }
