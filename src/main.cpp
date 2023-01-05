@@ -253,5 +253,6 @@ int main(){
             return main();
     }
     delete aux;
+    aux = NULL;
     return 0;
 }
